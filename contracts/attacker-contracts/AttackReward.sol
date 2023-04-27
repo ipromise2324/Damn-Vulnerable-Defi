@@ -5,6 +5,7 @@ import "../the-rewarder/TheRewarderPool.sol";
 import "../DamnValuableToken.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "hardhat/console.sol";
+
 contract AttackReward is Ownable{
     FlashLoanerPool pool;
     DamnValuableToken public liquidityToken;
