@@ -1,6 +1,6 @@
 const { ethers } = require('hardhat');
 const { expect } = require('chai');
-//test: Unstoppable test
+
 describe('[Challenge] Unstoppable', function () {
     let deployer, player, someUser;
     let token, vault, receiverContract;
