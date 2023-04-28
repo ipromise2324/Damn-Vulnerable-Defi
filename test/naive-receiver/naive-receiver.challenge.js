@@ -4,7 +4,6 @@ const { expect } = require('chai');
 describe('[Challenge] Naive receiver', function () {
     let deployer, user, player;
     let pool, receiver;
-
     // Pool has 1000 ETH in balance
     const ETHER_IN_POOL = 1000n * 10n ** 18n;
 
