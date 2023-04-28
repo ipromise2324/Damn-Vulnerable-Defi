@@ -76,7 +76,7 @@ describe('[Challenge] The rewarder', function () {
             liquidityToken.address,
             rewarderPool.address
         )
-
+        // If you don't do this, player will still in second round and get no rewards
         await ethers.provider.send("evm_increaseTime", [5 * 24 * 60 * 60]); // 5 days
 
         // Run attack
