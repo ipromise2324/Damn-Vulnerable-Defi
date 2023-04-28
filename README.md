@@ -1,5 +1,9 @@
 ![](cover.png)
 
+# My youtube channel
+https://www.youtube.com/@IPromiseSmartContract
+
+# Introduction
 **A set of challenges to learn offensive security of smart contracts in Ethereum.**
 
 Featuring flash loans, price oracles, governance, NFTs, lending pools, smart contract wallets, timelocks, and more!
