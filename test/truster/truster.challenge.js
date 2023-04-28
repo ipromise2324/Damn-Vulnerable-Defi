@@ -25,7 +25,6 @@ describe('[Challenge] Truster', function () {
         /** CODE YOUR SOLUTION HERE */
         const AttackTrusterDeployer = await ethers.getContractFactory("AttackTruster", player);
         const attackContract = await AttackTrusterDeployer.deploy(pool.address);
-
         const attackToken = token.connect(player);
 
         const amount = 0;
